@@ -1,8 +1,16 @@
-input {
-  border: solid 1px black;
+.container{
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
 }
 
-.btn {
+input {
+  border: solid 1px black;
+  margin: 5px;
+  text-align: center;
+}
+
+button {
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0;
@@ -22,7 +30,9 @@ input {
   background-image: none;
   border: 1px solid transparent;
   border-radius: 4px;
+  margin: 10px;
 }
+
 
 .btn-success {
     color: #fff;
@@ -37,5 +47,22 @@ input {
 }
 
 .quantity {
+  margin: 30px;
+}
+
+.wrapper-product{
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.wrapper-product > div{
+  display: inline-block;
+  word-spacing: normal;
+  letter-spacing: normal;
+  white-space: normal;
+  width: 19%; /** Value necessary*/
+}
+
+.quantity{
   margin: 0 5px;
 }
