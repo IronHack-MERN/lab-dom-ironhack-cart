@@ -66,3 +66,13 @@ button {
 .quantity{
   margin: 0 5px;
 }
+
+#total-shopping-cart{
+  display: none;
+  
+}
+
+.total-shopping-cart-true{
+  font-size: 2rem;
+  display: unset;
+}

@@ -17,9 +17,22 @@ function getQuantityOfProducts(itemNode, position){
 
 function updatePriceByProduct(productPrice, index){
   let nodeTotalPrice = document.getElementsByClassName(productPrice);
+  let totalPriceProducts = 0;
   for(let i = 0; i < index.length; i++){
+    totalPriceProducts += getTotalPrice(i);
       nodeTotalPrice[i].innerHTML = getTotalPrice(i);
+  } 
+
+  let totalShoppingCart = document.getElementsByClassName('total');
+  console.log(`total carrito: ${totalPriceProducts}`);
+
+  for(let i = 0; i < totalShoppingCart.length; i++){
+    totalShoppingCart[i].innerHTML = totalPriceProducts;
   }
+
+  let displayNone = document.getElementById('total-shopping-cart');
+  displayNone.removeAttribute('id');
+  displayNone.setAttribute('class', 'total-shopping-cart-true');
 }
 
 function getTotalPrice(position) {
